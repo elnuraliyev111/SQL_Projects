@@ -40,6 +40,11 @@ id	loss
 In the table expenditure_plan, the Mondays correspond to the weeks with numbers 6, 7, 24, and 26 respectively. For the first time period, we add up 10 and 12 to get 22. Since 22 is smaller than 30, the loss is 0. For the second time period, we add up 5 and 13 to get 18. Since 18 is greater than 10, the allowable expenditure for this time period, the answer is 18 - 10 = 8.
 
 Solution:
+
+
+
+
+\n
 CREATE PROCEDURE checkExpenditure()
 BEGIN
 	SELECT id, IF(loss < 0, 0, loss) AS loss FROM
