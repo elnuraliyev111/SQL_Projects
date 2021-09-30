@@ -44,7 +44,6 @@ Solution:
 
 
 
-\n
 CREATE PROCEDURE checkExpenditure()
 BEGIN
 	SELECT id, IF(loss < 0, 0, loss) AS loss FROM
